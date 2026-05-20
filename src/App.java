@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import controllers.BusquedaBinariaEdad;
 import models.Persona;
+import models.Product;
 
 
 public class App {
@@ -48,7 +49,9 @@ public class App {
 
         //Main del trabajo en clase
 
-        /*System.out.print("                                 ");
+        System.out.println("                                 ");
+        System.out.println("                                 ");
+        System.out.println("                                 ");
         System.out.println("----------Productos----------");
 
         Product[]  products = {
@@ -73,6 +76,6 @@ public class App {
 
         }else{
             System.out.println("No se encontro");
-        }*/
+        }
     }
 }
