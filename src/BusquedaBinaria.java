@@ -3,30 +3,26 @@ import models.Product;
 public class BusquedaBinaria {
     public void sortByName(Product[] products){
 
-        for (int i=0; i< products.length - 1; i++){
+        for( int i= 0; i< products.length - 1; i++){
+
             boolean swap = false;
-            for (int j = 0; j < products.length-1 - i; j++){
-                if( products[j].getNombre().equals(products[j+1].getNombre()) > 0);
-                Product aux = products[j];
-                products[j] = products[j + 1];
-                products[j+1]= aux;
+            for(int j=0; j < products.length -1 -i ; j++){
+                if(products[j]. getNombre().compareTo(products[j+1].getNombre()) > 0 ){
+                    Product aux = products[ j];
+                    products[j] = products[j+1];
+                    products[j+1] = aux;
 
-                swap = true;
-            
+                    swap = true;
+                }
+                    
             }
-
-             
-            if(!swap)
+            if(!swap){
                 break;
-            
+            }
         }
     }
-    
                 
-            
-        
-    }       
-    public int finByName(Product[] products, String nombre){
+    public int findByName(Product[] products, String nombre){
          int bajo = 0;
         int alto = products.length - 1;
 
