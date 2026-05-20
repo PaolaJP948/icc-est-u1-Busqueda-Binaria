@@ -14,7 +14,7 @@ public class BusquedaBinariaEdad {
 
         while(bajo <= alto){
 
-            int centro = (bajo + alto)/2;
+            int centro = (bajo +alto)/2;
             int valorDelCentro = persons[centro].getEdad();
 
             for(int i= bajo; i <= alto; i++){
